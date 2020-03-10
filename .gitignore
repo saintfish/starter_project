@@ -22,3 +22,5 @@
 .bazelversion
 # User-specific .bazelrc
 user.bazelrc
+# compilation database
+compile_commands.json

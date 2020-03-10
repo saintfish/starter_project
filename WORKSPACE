@@ -25,3 +25,10 @@ http_archive(
     strip_prefix = "rules_cc-9e10b8a6db775b1ecd358d8ddd3dab379a2c29a5",
     sha256 = "954b7a3efc8752da957ae193a13b9133da227bdacf5ceb111f2e11264f7e8c95",
 )
+
+# compilation database
+http_archive(
+    name = "bazel_compdb",
+    urls = ["https://github.com/saintfish/bazel-compilation-database/archive/dc727c1577b07c1184fa0b3567d6ec0f5e30ac3b.zip"],
+    strip_prefix = "bazel-compilation-database-dc727c1577b07c1184fa0b3567d6ec0f5e30ac3b",
+)

@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library", "cc_test")
+load("@bazel_compdb//:aspects.bzl", "compilation_database")
 
 cc_library(
     name = "hello",
@@ -24,4 +25,14 @@ cc_binary(
     deps = [
         ":hello",
     ],
+)
+
+compilation_database(
+    name = "compdb",
+    targets = [
+        ":hello",
+        ":hello_test",
+        ":hello_main",
+    ],
+    testonly = 1,
 )
