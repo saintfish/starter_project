@@ -31,4 +31,5 @@ http_archive(
     name = "bazel_compdb",
     urls = ["https://github.com/saintfish/bazel-compilation-database/archive/dc727c1577b07c1184fa0b3567d6ec0f5e30ac3b.zip"],
     strip_prefix = "bazel-compilation-database-dc727c1577b07c1184fa0b3567d6ec0f5e30ac3b",
+    sha256 = "80cb958f971f0ad4076c86309273ad92cdecf104583a5cea97a19112f5cc874c",
 )
